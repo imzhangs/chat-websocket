@@ -3,8 +3,8 @@
 -------------------
 
 [TOC]
-##1.1 Ê¹ÓÃjdk websocket api ´´½¨·şÎñ¶Ë
-Ìí¼Ómaven ÒÀÀµ
+##1.1 ä½¿ç”¨jdk websocket api åˆ›å»ºæœåŠ¡ç«¯
+æ·»åŠ maven ä¾èµ–
 
 		<dependency>
 			<groupId>javax.websocket</groupId>
@@ -12,9 +12,9 @@
 			<version>1.1</version>
 		</dependency>
 	
-·şÎñ¶ËÖ¸¶¨½ÚµãÁ¬½ÓÂ·¾¶£¬½á¹¹ÈçÏÂ
+æœåŠ¡ç«¯æŒ‡å®šèŠ‚ç‚¹è¿æ¥è·¯å¾„ï¼Œç»“æ„å¦‚ä¸‹
 ``` java
-@ServerEndpoint(value = "/ws/chat/{token}/{nickName}")
+ServerEndpoint(value = "/ws/chat/{token}/{nickName}")
 public class ChatServer {
 
 	@OnOpen
@@ -39,7 +39,7 @@ public class ChatServer {
 }
 ``` 
 
-##1.2  Ê¹ÓÃ html javascript ×ö client
+##1.2  ä½¿ç”¨ html javascript åš client
 
 ``` javascript
 var connect = function(serverURI, username,token) {
@@ -56,7 +56,7 @@ var connect = function(serverURI, username,token) {
 	};
 }
 ```
-##1.3 ¼ÓÈë Kindeditor-4.1.7
+##1.3 åŠ å…¥ Kindeditor-4.1.7
 ``` vbscript-html
 <script type="text/javascript" src="js/kindeditor-4.1.7/kindeditor.js"></script>
 <link rel="stylesheet" href="js/kindeditor-4.1.7/themes/default/default.css" />
@@ -64,7 +64,7 @@ var connect = function(serverURI, username,token) {
 <script charset="utf-8" src="js/kindeditor-4.1.7/lang/zh_CN.js"></script>
 ``` 
 
-¶¨ÖÆKindeditor ±à¼­Æ÷¹¤¾ßÀ¸
+å®šåˆ¶Kindeditor ç¼–è¾‘å™¨å·¥å…·æ 
 ``` javascript
  var editor;
   /****/
@@ -94,13 +94,13 @@ var connect = function(serverURI, username,token) {
     });
   });
 ```
-Ö¸¶¨ÎÄ¼şÉÏ´«Â·¾¶
+æŒ‡å®šæ–‡ä»¶ä¸Šä¼ è·¯å¾„
 ** uploadJson : '<%=request.getContextPath() %>/FileUploadServlet', **
 
 ##1.4 Test
 
-chrom  »ò firefox ä¯ÀÀÆ÷ÊäÈëµØÖ·
+chrome  æˆ– firefox æµè§ˆå™¨è¾“å…¥åœ°å€
 http://localhost:8080/chat-web/
-1. ÊäÈëêÇ³Æ£¬ Á¬½Ó
-2. ¶à¿ª¼¸¸öÒ³Ãæ ÖØ¸´ 1
-3. Ê¹ÓÃ¹¤¾ßÀ¸ ²âÊÔÉÏ´«Í¼Æ¬ÎÄ¼ş 
+1. è¾“å…¥æ˜µç§°ï¼Œ è¿æ¥
+2. å¤šå¼€å‡ ä¸ªé¡µé¢ é‡å¤ 1
+3. ä½¿ç”¨å·¥å…·æ  æµ‹è¯•ä¸Šä¼ å›¾ç‰‡æ–‡ä»¶ 
