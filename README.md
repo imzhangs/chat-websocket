@@ -95,6 +95,7 @@ var connect = function(serverURI, username,token) {
   });
 ```
 指定文件上传路径
+<<<<<<< HEAD
 ** uploadJson : '<%=request.getContextPath() %>/FileUploadServlet', **
 
 ##1.4 Test
@@ -103,3 +104,6 @@ http://localhost:8080/chat-web/
 1. 输入昵称， 连接
 2. 多开几个页面 重复 1
 3. 使用工具栏 测试上传图片文件 
+=======
+** uploadJson : '<%=request.getContextPath() %>/FileUploadServlet', **
+>>>>>>> 7f4024e79ac1bbe22487fe3caaf112a2ca28390e
